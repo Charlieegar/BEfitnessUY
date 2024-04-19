@@ -1,0 +1,228 @@
+@media screen and (max-width:1130px) {
+    .contacto section .formulario{
+    
+        background-color: #b9b7b7;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto;
+        font-size: 20px;
+        margin: 25px 50px 50px 50px;
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .9 );
+        grid-template-areas: 
+        "nombre apellido"
+        "genero celular"
+        "departamento email"
+        "comentario comentario"
+        "enviar enviar"
+        "info info";
+    }
+    .contacto section .formulario .formulario-info div iframe {
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:900px){
+    header {
+        position: static;
+
+    }
+    main .informate  {
+        flex-direction: column;
+    }
+    main .informate img {
+        width: 400px;
+        order: 1;
+    }
+    main .descripcion {
+        flex-direction: column;
+    }
+    main .descripcion img{
+        width: 400px;
+        order: 1;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:880px) {
+    footer nav {
+        display: none;
+    }
+    main .hero h1 { font-size: 30px;
+
+    }
+}
+@media screen and (max-width:750px) {
+    .contacto section .formulario{
+    
+        background-color: #b9b7b7;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: auto;
+        font-size: 20px;
+        margin: 25px 50px 50px 50px;
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .9 );
+        grid-template-areas: 
+        "nombre"
+        "apellido"
+        "genero"
+        "celular"
+        "departamento"
+        "email"
+        "comentario"
+        "enviar"
+        "info";
+    }
+    .contacto section .formulario .formulario-info div iframe {
+        width: 450px;
+        height: 250px;
+    }
+    
+}
+@media screen and (max-width: 690px) {
+    main .hero h1 { 
+        font-size: 25px;
+        padding: 15px;
+    }
+
+}
+    
+
+@media screen and (max-width:650px) {
+    header {
+        font-size: 20px;
+        position: static;
+        top: 0;}
+    footer {
+        height: 150px;
+        display: grid;
+        grid-template-areas:
+        "logo adress"
+        "parrafo parrafo";
+    }
+    footer .footer-logo img {
+        margin: 15px;
+    }
+    footer .footer-logo{  grid-area: logo;}
+    footer .footer-parrafo{ grid-area: parrafo;}
+    footer .footer-adress{ grid-area: adress;}
+
+    footer p {
+        margin: 0px;
+    }
+    .contacto section .formulario .formulario-info div iframe {
+        width: 350px;
+        height: 150px;
+    }
+    .contacto section .formulario .formulario-coment textarea {
+        width: 350px;
+        height: 100px;
+    }
+    
+    
+    .contacto p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:600px){
+    main .descripcion div iframe {
+        width: 400px;
+    }
+    .contacto p {font-size: 20px;}
+    .contacto section .formulario label {font-size: 15px;}
+    .contacto section .formulario input:not(.formulario-genero input){
+        width: 300px;
+        height: 23px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:550px) {
+    .contacto section .formulario .formulario-info div iframe {
+        width: 250px;
+        height: 150px;   
+    }
+}
+@media screen and (max-width:510px) {
+    main .hero h1 {font-size: 20px;}
+    main .hero p {font-size: 15px;}
+    
+}
+@media screen and (max-width:480px) {
+    .contacto section .formulario .formulario-info div iframe {
+        width: 200px;
+        height: 150px; 
+    }
+    .contacto section .formulario .formulario-coment textarea {
+        width: 250px;
+        height: 100px;
+    }
+    
+    
+}    
+@media screen and (max-width:468px) {
+    
+    .contacto section .formulario {
+        margin: 25px 25px 25px 25px;
+    }
+    .contacto section .formulario .formulario-info {
+        padding: 0;
+    }
+
+}
+@media screen and (max-width:450px) {
+    footer {
+        grid-template-areas:"logo" 
+                            "parrafo";
+        justify-items: center;
+        
+    }
+    footer .footer-adress {
+        display: none;
+    }
+    main .descripcion div iframe {
+        width: 350px;
+        height: 280px;
+    }
+
+    
+}
+@media screen and (max-width:432px) {
+    
+    
+}
+@media screen and (max-width:410px){
+    main .hero h1 {font-size: 17px;}
+    main .hero p {font-size: 15px;}
+    main .informate h1{font-size:25px ;}
+    main .informate h2{font-size:25px ;}
+    main .descripcion h2{font-size: 25px;}
+    main .descripcion h1{font-size: 25px;}
+}
+    
+@media  screen and (max-width:420px) {
+    main .informate img {width: 350px;}
+    main .descripcion img {width: 350px;}
+    
+}
+@media screen and (max-width:390px) {
+    main .descripcion div iframe {
+        width: 300px;
+        height: 220px;
+    }
+    .contacto section .formulario{
+        margin: 25px 10px 25px 10px;
+    }
+}
+@media screen and (max-width:362px) {
+    main .informate img {
+        width: 300px;
+        height: 200px;
+
+    }
+    main .descripcion img {
+        width: 300px;
+        height: 200px;
+    }
+}
