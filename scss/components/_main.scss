@@ -25,6 +25,8 @@ main {
             color: #ffffff;
             font-size: 25px;
             margin: 20px;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
 
         }
 
@@ -116,6 +118,10 @@ main {
                 text-align: center;
                 margin: 30px 70px 30px 70px;
                 box-shadow: 0 0 10px 5px;
+                transition: 1s;
+                &:hover{
+                transform: scale(1.1);
+            }
                 img{
                     border-bottom: 2px #000000 solid;
                     width: 195px;

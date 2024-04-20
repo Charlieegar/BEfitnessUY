@@ -149,6 +149,10 @@ header img {
     align-items: center;
     flex-wrap: wrap;
     font-size: 20px;
+    transition: 1s;
+}
+.productos .productos-tarjetas :hover {
+    transform: scale(1.1);
 }
 .productos .productos-tarjetas div {
     

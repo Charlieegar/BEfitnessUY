@@ -6,7 +6,8 @@
 header {
   font-size: 20px;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 header img {
   width: 200px;
@@ -62,7 +63,9 @@ main .hero {
   main .hero p {
     color: #ffffff;
     font-size: 25px;
-    margin: 20px; }
+    margin: 20px;
+    animation-iteration-count: infinite;
+    animation-duration: 2s; }
 
 main .informate {
   background-color: #656464;
@@ -136,7 +139,10 @@ main .productos .productos-tarjetas {
     background-color: #656464;
     text-align: center;
     margin: 30px 70px 30px 70px;
-    box-shadow: 0 0 10px 5px; }
+    box-shadow: 0 0 10px 5px;
+    transition: 1s; }
+    main .productos .productos-tarjetas div:hover {
+      transform: scale(1.1); }
     main .productos .productos-tarjetas div img {
       border-bottom: 2px #000000 solid;
       width: 195px;
@@ -197,11 +203,7 @@ footer {
     font-size: 20px;
     margin: 25px 50px 50px 50px;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.9);
-    grid-template-areas: "nombre apellido info"
- "genero celular info"
- "departamento email info"
- "comentario comentario info"
- "enviar enviar info"; }
+    grid-template-areas: "nombre apellido info" "genero celular info" "departamento email info" "comentario comentario info" "enviar enviar info"; }
     .contacto section .formulario .formulario-nombre {
       margin: 15px;
       grid-area: nombre;
@@ -335,12 +337,7 @@ footer {
     font-size: 20px;
     margin: 25px 50px 50px 50px;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.9);
-    grid-template-areas: "nombre apellido"
- "genero celular"
- "departamento email"
- "comentario comentario"
- "enviar enviar"
- "info info"; }
+    grid-template-areas: "nombre apellido" "genero celular" "departamento email" "comentario comentario" "enviar enviar" "info info"; }
   .contacto section .formulario .formulario-info div iframe {
     width: 500px;
     height: 300px; } }
@@ -374,15 +371,7 @@ footer {
     font-size: 20px;
     margin: 25px 50px 50px 50px;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.9);
-    grid-template-areas: "nombre"
- "apellido"
- "genero"
- "celular"
- "departamento"
- "email"
- "comentario"
- "enviar"
- "info"; }
+    grid-template-areas: "nombre" "apellido" "genero" "celular" "departamento" "email" "comentario" "enviar" "info"; }
   .contacto section .formulario .formulario-info div iframe {
     width: 450px;
     height: 250px; } }
@@ -400,8 +389,7 @@ footer {
   footer {
     height: 150px;
     display: grid;
-    grid-template-areas: "logo adress"
- "parrafo parrafo"; }
+    grid-template-areas: "logo adress" "parrafo parrafo"; }
   footer .footer-logo img {
     margin: 15px; }
   footer .footer-logo {
@@ -460,8 +448,7 @@ footer {
 
 @media screen and (max-width: 450px) {
   footer {
-    grid-template-areas: "logo" 
- "parrafo";
+    grid-template-areas: "logo"  "parrafo";
     justify-items: center; }
   footer .footer-adress {
     display: none; }
