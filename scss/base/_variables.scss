@@ -1,0 +1,30 @@
+
+                                    
+
+$color-principal: #000000;
+$color-secundario: #656464;
+$color-terciario: #ffffff;
+
+                                    
+
+$colores: #000000, #656464, #ffffff;
+
+                                    
+
+%img-tarjetas-productos {
+    border-bottom: 2px #000000 solid;
+    width: 195px;
+    height: 200px;
+    background-color:  nth($list: $colores, $n: 3);
+    object-fit: contain;
+}
+
+                                    
+
+@mixin tarjetas-productos ($flex, $justify, $align, $wrap, $letras) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    font-size: $letras;
+}

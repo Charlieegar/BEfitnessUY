@@ -13,16 +13,16 @@ main {
         align-items: center;
         
         h1{
-            color:#ffffff;
+            color: nth($list: $colores, $n: 3);
             font-size: 40px;
             text-align: center;
             font-weight: 600;
-            border: 3px solid #ffffff;
+            border: 3px solid nth($list: $colores, $n: 3);
             padding: 0px 60px 0px 60px;
 
         }
         p{
-            color: #ffffff;
+            color: nth($list: $colores, $n: 3);
             font-size: 25px;
             margin: 20px;
             animation-iteration-count: infinite;
@@ -32,7 +32,7 @@ main {
 
     }
     .informate {
-        background-color: #656464;
+        background-color: $color-secundario;
         color: #000000;
         text-align: center;
         display: flex;
@@ -67,7 +67,7 @@ main {
 
     }
     .descripcion {
-        background-color: #656464;
+        background-color: $color-secundario;
         color: #000000;
         text-align: center;
         display: flex;
@@ -100,21 +100,17 @@ main {
     }
     .productos {
         h2{
-            color: #ffffff;
-            background-color: #000000;
+            color: nth($list: $colores, $n: 3);
+            background-color: $color-principal;
             padding: 10px;
             text-align: center;
         }
         .productos-tarjetas{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            font-size: 20px;
+            @include tarjetas-productos (flex, space-around, center, wrap, 20px);
             div{border: 2px #000000 solid;
                 width: 200px;
                 height: 315px;
-                background-color: #656464;
+                background-color: $color-secundario;
                 text-align: center;
                 margin: 30px 70px 30px 70px;
                 box-shadow: 0 0 10px 5px;
@@ -123,10 +119,7 @@ main {
                 transform: scale(1.1);
             }
                 img{
-                    border-bottom: 2px #000000 solid;
-                    width: 195px;
-                    height: 200px;
-                    background-color:  #ffffff;
+                    @extend %img-tarjetas-productos
                 }
                 h3{
                     color: #000000;
@@ -136,8 +129,8 @@ main {
                 }
                 a{
                     text-decoration: none;
-                    background-color: #000000;
-                    color: #ffffff;
+                    background-color: $color-principal;
+                    color: nth($list: $colores, $n: 3);
                     padding: 8px;
                     margin: top 10px; ;
 

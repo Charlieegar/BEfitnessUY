@@ -1,3 +1,10 @@
+main .productos .productos-tarjetas div img {
+  border-bottom: 2px #000000 solid;
+  width: 195px;
+  height: 200px;
+  background-color: #ffffff;
+  object-fit: contain; }
+
 * {
   margin: 0;
   padding: 0;
@@ -143,11 +150,6 @@ main .productos .productos-tarjetas {
     transition: 1s; }
     main .productos .productos-tarjetas div:hover {
       transform: scale(1.1); }
-    main .productos .productos-tarjetas div img {
-      border-bottom: 2px #000000 solid;
-      width: 195px;
-      height: 200px;
-      background-color: #ffffff; }
     main .productos .productos-tarjetas div h3 {
       color: #000000;
       margin-top: 10px;

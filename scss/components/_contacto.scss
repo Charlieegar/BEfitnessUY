@@ -1,5 +1,5 @@
 .contacto {
-    background-color: #656464;
+    background-color: $color-secundario;
     font-size: 30px;
     color: #000000;
     p {
@@ -136,12 +136,12 @@
             }
             .formulario-info {
                 grid-area: info;
-                background-color: #000000;
+                background-color: $color-principal;
                 margin: 0px;
                 padding: 20px;
                 text-align: center;
                 h2{
-                    color: #ffffff;
+                    color: nth($list: $colores, $n: 3);
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     margin-bottom:20px;
                 }
@@ -150,7 +150,7 @@
                     align-items: center;
                     flex-direction: column;
                     p{
-                        color: #ffffff;
+                        color: nth($list: $colores, $n: 3);
                         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     }
                     iframe{
@@ -166,14 +166,14 @@
                     li{
                         margin: 20px;
                         a{
-                            color: #ffffff;
+                            color: nth($list: $colores, $n: 3);
                             text-decoration: none;
                         }
                     }
                     li{
                         margin: 20px;
                         a{
-                            color: #ffffff;
+                            color: nth($list: $colores, $n: 3);
                             text-decoration: none;
                         }
                     }
