@@ -25,15 +25,15 @@
             "departamento email info"
             "comentario comentario info"
             "enviar enviar info";
+            border: 5px $color-principal solid;
             .formulario-nombre{
                 margin: 15px;
                 grid-area: nombre;
                 display: flex;
                 flex-direction: column;
-                label{font-size: 20px;}
+                label {@extend %label-contacto;}
                 input{
-                    width: 300px;
-                    height: 30px;
+                    @extend %input-contacto;
                 }
 
             }
@@ -42,10 +42,9 @@
                 grid-area: apellido;
                 display: flex;
                 flex-direction: column;
-                label{font-size: 20px;}
+                label {@extend %label-contacto;}
                 input{
-                    width: 300px;
-                    height: 30px;
+                    @extend %input-contacto;
                 }
 
             }
@@ -54,7 +53,7 @@
                 grid-area: genero;
                 display: flex;
                 flex-direction: column;
-                label{font-size: 20px;}
+                label{@extend %label-contacto;}
                 div{
                     label{
                         font-size: 20px;
@@ -77,8 +76,9 @@
             .formulario-depto{
                 margin: 15px;
                 grid-area: departamento;
-                label{font-size: 20px;}
+                label{@extend %label-contacto;}
                 select{
+                    border: 2px $color-principal solid;
                     option{}
                 }
 
@@ -88,10 +88,11 @@
                 grid-area: comentario;
                 display: flex;
                 flex-direction: column;
-                label{font-size: 20px;}
+                label{@extend %label-contacto;}
                 textarea{
                     width: 500px;
                     height: 100px;
+                    border: 2px $color-principal solid;
 
                 }
 
@@ -101,10 +102,9 @@
                 grid-area: celular;
                 display: flex;
                 flex-direction: column;
-                label{font-size: 20px;}
+                label{@extend %label-contacto;}
                 input{
-                    width: 300px;
-                    height: 30px;
+                    @extend %input-contacto;
                 }
 
             }
@@ -113,10 +113,9 @@
                 grid-area: email;
                 display: flex;
                 flex-direction: column;
-                label{font-size: 20px;}
+                label{@extend %label-contacto;}
                 input{
-                    width: 300px;
-                    height: 30px;
+                    @extend %input-contacto;
                 }
             }
             .formulario-enviar{
@@ -125,12 +124,10 @@
                 text-align: center;
                 font-size: 20px;
                 input{
-                    width: 300px;
-                    height: 30px;
+                    @extend %input-contacto;
                 }
                 input{
-                    width: 300px;
-                    height: 30px;
+                    @extend %input-contacto;
                 }
 
             }
